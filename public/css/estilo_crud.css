@@ -1,0 +1,141 @@
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0 auto;
+    max-width: 100%;
+    font-family: "Lato";
+    color: #333;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+}
+
+.menu{
+    height: 150px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-top: 0;
+}
+
+.menu p{
+    color: #bc4e9c;
+    font-weight: 900;
+    font-size: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+
+}
+
+
+
+/* FORMULARIO */
+
+
+body > table{
+    width: 80%;
+}
+
+.contenedor{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 450px;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #ffaa80;
+}
+
+table .list{
+    width: 100%;
+}
+
+td, th{
+    border: 1px solid #4d0505;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),table.list thead>tr{
+    background-color: #ffff80;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color: red;
+    margin-left: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+/* Formulario */
+
+
+
+#wave1{
+    margin-top: 120px;
+}

@@ -1,0 +1,25 @@
+table {
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: azure;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 20px;
+}
+
+thead {
+    background-color: #ffff80;
+    border-bottom: 1px solid black;
+    color: black;
+    border-radius: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}

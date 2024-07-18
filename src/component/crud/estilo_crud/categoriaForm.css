@@ -1,0 +1,30 @@
+.m-4 {
+    /* display:flex;
+    flex-direction: column; */
+    border-bottom: 4px solid #ffff80;
+}
+.m-4 label{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 210px;
+    margin-bottom: 20px;
+
+}
+
+.m-4 input{
+    width: 400px;
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 20px;
+
+}
+
+.m-4 button{
+    margin-top: 20px;
+    margin-left: 250px;
+    background-color: #ffff80;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+}

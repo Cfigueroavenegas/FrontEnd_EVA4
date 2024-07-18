@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    font-family: sans-serif;
+
+}
+
+.menu{
+    height: 150px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-top: 0;
+
+
+}
+.menu p{
+    color: #bc4e9c;
+    font-weight: 900;
+    font-size: 50px;
+    margin-right: 50px;
+
+
+}
+
+
+.wave{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    z-index: -100;
+}
+
+#wave1 {
+    padding-top: 100px;
+}
+
+
+.caja{
+    height: 350px;
+    width: 400px;
+    color: #030657dc;
+    background-color: #ffaa80;
+    border-style: solid;
+    border-width: 8px;
+    border-color: #ffff80;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+.caja form{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+
+}
+
+
+.caja form .titulo{
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.caja form label {
+    margin-bottom: 35px;
+}
+
+.caja form label .fa-regular{
+    font-size: 20px;
+    color: #252525;
+    margin-right: 10px;
+
+}
+
+.caja form label .fa-solid{
+    font-size: 20px;
+    color: #252525;
+    margin-right: 10px;
+}
+
+.caja form label input{
+    /* outline: none;
+    border: none;
+    color: #252525; */
+    background-color: #ffaa80;
+    border: solid 1px #bc4e9c;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.caja form button{
+    color: #ffff80;
+    border: none;
+    background-color: #f80759;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.error{
+    color: red;
+    display: none;
+    margin-top: 10px;
+
+}

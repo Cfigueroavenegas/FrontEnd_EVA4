@@ -1,0 +1,373 @@
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0 auto;
+    max-width: 100%;
+    font-family: "Lato";
+    color: #333;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+
+}
+
+/*VOUCHER*/
+
+
+.voucher {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    background-color: #f8c1a5;
+    width: 700px;
+    padding: 20px;
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+}
+
+
+.voucher-activo {
+    display: block;
+}
+
+.btn-cerrar-voucher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f80759;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-cerrar-voucher:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* WAVE*/
+
+.wave{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);
+    background: linear-gradient(to right, #f80759, #bc4e9c);
+    z-index: -100;
+}
+
+
+/* HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 30px 0 40px 0;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+
+
+.logo{
+    height: 100px;
+    width: auto;
+    position: absolute;
+    z-index: 3;
+    position: fixed;
+    overflow: hidden;
+
+
+}
+
+.tienda-titulo{
+    color: #ffaa80;
+    font-weight: 900;
+    font-size: 50px;
+    /* margin-right: 40px; */
+    margin-top: 20px;
+
+
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    color: #bc4e9c;
+    margin-right: 4px;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.contenedor-icono{
+    position: relative;
+}
+
+
+/* CARRITO DE COMPRAS */
+
+.counter{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    margin-bottom: 200px;
+
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.contenedor-carrito {
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #f8c1a5;
+    width: 600px;
+    z-index: 1;
+
+    box-shadow: rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+
+}
+
+.carrito-producto{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-carrito-producto{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-carrito-producto{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.fa-rectangle-xmark{
+    width: 20px;
+    height: 20px;
+}
+
+.fa-rectangle-xmark:hover{
+    color: #f80759;
+    cursor: pointer;
+
+}
+
+.carrito-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.carrito-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.contenedor-carrito-escondido{
+    display: none;
+}
+
+
+
+/* CATALOGO */
+
+
+.contenedor{
+    padding-top: 150px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 200px;
+}
+
+.item {
+    border-radius: 10px;
+    border-color: #ffff80;
+    border-style: solid;
+    height: 500px;
+    width: 300px;
+    background-color: #ffaa80;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+
+.item img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.figura{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.1);
+    border-radius: 10px 10px 0 0;
+
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+.precio {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.info button {
+    width: 200px;
+    border: none;
+    background: none;
+    background-color: #f80759;
+    color: #000000;
+    padding: 15px 10px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 45px;
+    font-weight: 900;
+
+}
+
+.carrito-vacio{
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #1e1d1d;
+    align-items: center;
+    display: flex;
+
+
+}
+
+footer p{
+    margin-left: 750px;
+    color: #fff;
+    text-align: center;
+}
+
+.voucher.hidden {
+    display: none;
+}
+
+.btn-pagar{
+    background-color: #f80759;
+    border: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 900;
+
+}
+
+.cajita_categorias{
+    margin-top: 150px;
+    background-color: #ffaa80;
+    width: 600px;
+    padding: 20px;
+    border: 2px solid #ffff80;
+    border-radius: 4px;
+}
+
+.cajita_categorias label{
+    font-size: 20px;
+}
+
+.cajita_categorias select {
+    font-size: 15px;
+    padding: 5px;
+}
+
+#catalogo{
+    height: auto;
+    padding-top: 50px;
+}

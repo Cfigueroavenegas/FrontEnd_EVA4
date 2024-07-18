@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tienda</title>
+    <link rel="icon" type="image/png" href="../imagenes/logo_resinoxy.png">
+</head>
+<body>
+    <header>
+        <a href="principal.html">
+            <img src="/html/imagenes_html/logo_resinoxy.png" alt="" class="logo">
+        </a>
+        <h1 class="tienda-titulo">Tienda</h1>
+
+
+        <div class="voucher voucher-escondido" id="voucher">
+            <button class="btn-cerrar-voucher">Cerrar</button>
+            <div id="voucher-content"></div>
+        </div>
+        
+
+        <div class="contenedor-icono">
+            <div class="contenedor-carrito-icono">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                  </svg>
+                <div class="counter">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="contenedor-carrito contenedor-carrito-escondido">
+                <div class="row-producto">
+                    <div class="carrito-producto">
+                        <div class="info-carrito-producto">
+                            <span class="cantidad-carrito-producto"></span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
+                        </div>
+                        <i class="fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                </div>
+                <div class="carrito-total">
+                    <h3>Total</h3>
+                    <span class="total-pagar"></span>
+                    <button class="btn-pagar">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="cajita_categorias">
+            <label for="filtro-categoria">Filtrar por Categoría:</label>
+            <select id="filtro-categoria">
+                <option value="">Todas</option>
+            </select>
+    
+            <label for="filtro-oferta">Filtrar por Oferta:</label>
+            <select id="filtro-oferta">
+                <option value="">Todas</option>
+                <option value="true">En Oferta</option>
+                <option value="false">Sin Oferta</option>
+            </select>
+        </div>
+
+        <div class="contenedor" id="catalogo">
+
+        </div>
+    </body>
+
+    
+    <footer>
+        <p>ResinoxyⓇ™ Todos los derechos reservados</p>
+    </footer> 
+    <script src="../js/catalogo.js"></script>  
+</body>
+
+</html>
